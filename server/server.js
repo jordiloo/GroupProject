@@ -90,7 +90,7 @@ app.get('/api/recipes/search', async (req, res) => {
   }
 });
 
-app.get('/api/search', async (req, res) => {
+app.get('https://group-project-backend-pi.vercel.app/api/search', async (req, res) => {
   try {
     const query = req.query.q;
     console.log(`Searching for recipes with query: ${query}`);
