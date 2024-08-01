@@ -41,7 +41,7 @@ function App() {
     setIsLoading(true)
     setError(null)
     try {
-      const response = await axios.get(`/api/search?q=${currentSearch}`);
+      const response = await axios.get(`https://group-project-backend-pi.vercel.app/api/search?q=${currentSearch}`);
       setRecipes(response.data);
     } catch (err) {
       console.error('Error fetching latest recipes:', err);
